@@ -1,5 +1,12 @@
 def change(money):
-    # write your code here
+    """
+    Input: An integer money
+    Output: The minimum number of coins with denominations 1, 5, and 10 that changes money.
+    
+    We try to change as many largest coins with maximal denomination (10) as possible
+    and apply the same procedure to 5 and 1
+
+    """
     count = 0
     while money > 0:
         if money >= 10:
