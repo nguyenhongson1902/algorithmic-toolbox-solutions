@@ -2,26 +2,30 @@ from sys import stdin
 
 
 def optimal_value(capacity, weights, values):
-    # value = 0.
-    # write your code here
+    """
+    Take as Much of the Most Expensive Compound as You Can
+    
+    Time: O(n^2)
+
+    """
     if capacity == 0 or not weights:
         return 0.
 
     prices = []
     for v, w in zip(values, weights):
-        prices.append(v / w)
+        prices.append(v / w) # calculate value / weight = item value / 1 weight
 
     m = 0 # the index of the most expensive item
     for i in range(len(prices)):
         if prices[i] > prices[m]:
             m = i
+
     amount = min(weights[m], capacity)
     value = prices[m] * amount
 
     capacity -= amount
     del weights[m]
     del values[m]
-
 
     return value + optimal_value(capacity, weights, values)
 
