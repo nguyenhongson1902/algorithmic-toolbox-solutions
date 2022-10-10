@@ -62,6 +62,11 @@ def randomized_quick_sort(array, left, right):
 #     return count
 
 def points_cover(starts, ends, points):
+    """
+    Explaination: https://towardsdatascience.com/course-1-algorithmic-toolbox-part-3-divide-and-conquer-dd9022bfa2c0
+    Reference: https://gist.github.com/jseow5177/9360ba17eb59551e32985cbf66ef94b3
+    """
+
     LEFT, POINT, RIGHT = 1, 2, 3
     new_list = []
     for start in starts:
