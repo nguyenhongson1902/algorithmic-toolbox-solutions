@@ -8,7 +8,10 @@ def is_better(number, max_number):
     else:
         return False
 
-def largest_number_naive(numbers):
+def largest_number(numbers):
+    """
+    See the pseudocode in toolbox_statements.pdf
+    """
     # numbers = list(map(str, numbers))
 
     # largest = 0
@@ -39,4 +42,4 @@ def largest_number_naive(numbers):
 if __name__ == '__main__':
     _ = int(input())
     input_numbers = input().split()
-    print(largest_number_naive(input_numbers))
+    print(largest_number(input_numbers))
