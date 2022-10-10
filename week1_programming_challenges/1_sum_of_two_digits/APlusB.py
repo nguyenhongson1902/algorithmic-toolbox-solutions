@@ -1,4 +1,8 @@
 def sum_of_two_digits(first_digit, second_digit):
+    """
+    Input: 2 integer numbers
+    Output: sum of these 2 numbers
+    """
     return first_digit + second_digit
 
 
