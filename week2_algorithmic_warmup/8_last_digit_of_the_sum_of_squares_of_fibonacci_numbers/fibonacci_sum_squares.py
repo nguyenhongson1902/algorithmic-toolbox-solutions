@@ -1,4 +1,13 @@
 def fibonacci_sum_squares(n):
+    """
+    Input: An integer n
+    Output: (F0^2 + F1^2 + ... +Fn^2) mod 10
+
+    Property: F0^2 + F1^2 + ... +Fn^2 = F_n * F_(n+1)
+
+    Proof: https://math.stackexchange.com/questions/2613609/summation-of-squares-of-fibonacci-numbers
+
+    # naive solution
     # if n <= 1:
     #     return n
 
@@ -9,7 +18,7 @@ def fibonacci_sum_squares(n):
     #     sum += current * current
 
     # return sum % 10
-
+    """
     last_digits = [0] * 60
     last_digits[0] = 0
     last_digits[1] = 1
