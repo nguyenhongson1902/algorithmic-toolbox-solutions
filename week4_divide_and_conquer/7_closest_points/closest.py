@@ -53,6 +53,14 @@ def closest_pair(X, Y): # X, Y are already sorted
     return d
 
 def minimum_distance_squared(points):
+    """
+    References:
+    https://www.youtube.com/watch?v=6u_hWxbOc7E&ab_channel=LingQi
+    https://towardsdatascience.com/course-1-algorithmic-toolbox-part-3-divide-and-conquer-dd9022bfa2c0
+    [CLRS] textbook, [section 33.4] about this problem
+    [CLRS] Thomas H. Cormen, Charles E. Leiserson, Ronald L. Rivest, Clifford Stein. Introduction to Algorithms (3rd Edition). MIT Press and McGraw-Hill. 2009.
+
+    """
     X = sorted(points, key=lambda point: point.x)
     Y = sorted(points, key=lambda point: point.y)
     return closest_pair(X, Y)
