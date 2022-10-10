@@ -2,7 +2,6 @@ from sys import stdin
 
 
 def min_refills(distance, tank, stops):
-    # write your code here
     # distance:d, tank: m
     location = 0
     if location + tank >= distance:
