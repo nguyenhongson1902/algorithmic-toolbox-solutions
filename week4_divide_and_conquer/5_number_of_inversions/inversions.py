@@ -11,6 +11,10 @@ from itertools import combinations
 count = 0
 
 def merge(left_half, right_half):
+    """
+    See the illustration of merge sort method here
+    https://www.geeksforgeeks.org/counting-inversions/
+    """
     global count
     sorted_list = []
     # count = 0
