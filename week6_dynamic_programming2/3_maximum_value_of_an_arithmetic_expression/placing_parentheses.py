@@ -32,7 +32,9 @@ def min_max(i, j, m, M, ops):
 
 
 def maximum_value(dataset):
-    # write your code here
+    """
+    Reference: https://towardsdatascience.com/course-1-algorithmic-toolbox-part-4-dynamic-programming-223ffc01984a
+    """
     ops = [dataset[i] for i in range(len(dataset)) if i % 2 != 0]
     nums = [int(dataset[i]) for i in range(len(dataset)) if i % 2 == 0]
     # print(ops)
