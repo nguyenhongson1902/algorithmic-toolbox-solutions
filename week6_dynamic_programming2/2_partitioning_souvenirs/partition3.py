@@ -1,6 +1,10 @@
 from sys import stdin
 
 def subset_sums(S, n, sum_S1, sum_S2, sum_S3):
+    """
+    3-partition problem
+    https://www.techiedelight.com/3-partition-problem/
+    """
     if sum_S1 == 0 and sum_S2 == 0 and sum_S3 == 0:
         return 1
     
