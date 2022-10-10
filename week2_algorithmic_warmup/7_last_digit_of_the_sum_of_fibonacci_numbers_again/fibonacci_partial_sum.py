@@ -2,6 +2,13 @@
 import sys
 
 def fibonacci_partial_sum_naive(from_, to):
+    """
+    Input: 2 integers m, n (m = from_, n = to)
+    Output: The last digit of F_m + F_(m + 1) + ... + F_n
+
+    Property: S_(m -> n) = S_n - S_(m - 1) = F_(n+2) - F_(m+1)
+
+    # naive solution
     # _sum = 0
 
     # current = 0
@@ -13,6 +20,8 @@ def fibonacci_partial_sum_naive(from_, to):
 
     #     current, _next = _next, current + _next
     # return _sum % 10
+    """
+    
 
     last_digits = [0] * 60
     last_digits[0] = 0
@@ -21,7 +30,6 @@ def fibonacci_partial_sum_naive(from_, to):
         last_digits[i] = (last_digits[i - 1] + last_digits[i - 2]) % 10
 
     return (last_digits[(to + 2) % 60] - last_digits[(from_ + 1) % 60]) % 10
-
 
 
 
