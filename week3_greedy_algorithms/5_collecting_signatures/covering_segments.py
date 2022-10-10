@@ -4,8 +4,11 @@ from collections import namedtuple
 Segment = namedtuple('Segment', 'start end')
 
 def optimal_points(segments):
+    """
+    https://stackoverflow.com/questions/37936571/covering-segments-by-points
+
+    """
     points = []
-    # write your code here
     # for s in segments:
     #     points.append(s.start)
     #     points.append(s.end)
