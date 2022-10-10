@@ -2,7 +2,6 @@ import math
 
 def optimal_summands(n):
     summands = []
-    # write your code here
     # n = 8 => summands = [1, 2, 5]
     # n = 6 => summands = [1, 2, 3]
     # Explaination: The smallest number that can be made with k different summands 
